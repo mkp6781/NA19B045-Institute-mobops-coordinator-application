@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/name_and_age_button"
+        android:layout_width="182dp"
+        android:layout_height="52dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto_mono"
+        android:text="NAME AND AGE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#76FF03"
+        android:textSize="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/saved_database_button"
+        android:layout_width="182dp"
+        android:layout_height="52dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto_mono"
+        android:text="SAVED DATABASE"
+        android:textColor="#76FF03"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+</androidx.constraintlayout.widget.ConstraintLayout>
